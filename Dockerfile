@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.6
 
 ENV PYTHONUNBUFFERED 1
 RUN python -m pip install --upgrade pip
@@ -7,4 +7,5 @@ WORKDIR /var/app
 COPY requirements.txt /var/app/
 RUN pip install -r requirements.txt
 COPY . /var/app/. 
-EXPOSE 8000
+EXPOSE 8002
+

@@ -1,9 +1,6 @@
 {
-    "AWSEBDockerrunVersion": "1",
-    "Image":{
-      "Name":"deadlycoder07/screencast"
-    },
-    "Ports": [
-      {"ContainerPort": "8000"}
-    ]
+  "AWSEBDockerrunVersion": "1",
+
+  "Ports": [{ "ContainerPort": "8002" }],
+  "Logging": "/var/app/vps/log"
 }
